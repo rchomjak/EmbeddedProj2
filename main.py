@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    surv = Surveillance(args.config, DataLoader.DEVICE_CAM_RPI)
+    surv = Surveillance(args.config, DataLoader.DEVICE_CAM)
     surv.run()
 
 
