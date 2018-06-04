@@ -1,7 +1,10 @@
-"""
-from picamera.array import PiRGBArray
-from picamera import PiCamera
-"""
+
+try:
+    from picamera.array import PiRGBArray
+    from picamera import PiCamera
+except:
+    pass
+
 import cv2
 
 class DataLoader(object) :
@@ -12,7 +15,6 @@ class DataLoader(object) :
 
         self.dev_type = dev_type
 
-        print(config)
 
         self.cam = None
         self.stop_cap = None
