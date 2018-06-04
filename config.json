@@ -24,22 +24,22 @@
         },    
 
         "frames": {
-            "avarage": 5 
+            "avarage": 10 
         }
     },
 
     "email": {
 
         "user": {
-            "send_email": true,
-            "destination_email": "richard.chomjak@gmail.com",
-            "timeout": 0.5
+            "recipients": ["recipient@blabla.com"],
+            "timeout": 1 
         },
 
-        "server": {
-            "smtp_address": "smtp.gmail.com:587",
-            "username": "",
-            "password": ""
+        "server_smtp": {
+            "address": "smtp.gmail.com:587",
+            "username": "abc",
+            "password": "password",
+            "From": "abc@gmail.com"
         }
         
     }
