@@ -23,7 +23,6 @@ class Surveillance(object):
 
     def __init__(self, config_path, dev_type=DataLoader.DEVICE_CAM):
         """ dev_type is device type (Dataloader.py) """
-        print(config_path)
 
         self.config_path = config_path
         self.data = None 
@@ -46,7 +45,6 @@ class Surveillance(object):
 
 
         make_config_obj()
-        print(self.config.email)
         self.data = DataLoader(dev_type, self.config.cam)
         self.deque = collections.deque(maxlen=self.config.opencv.frames.avarage) 
         self.email = Email(self.config.email)
