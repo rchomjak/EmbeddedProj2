@@ -130,11 +130,11 @@ class Surveillance(object):
 
 if __name__ == "__main__":
 
-    config = ""
+
     args = parser.parse_args()
 
-    a = Surveillance(args.config, DataLoader.DEVICE_CAM)
-    a.run()
+    surv = Surveillance(args.config, DataLoader.DEVICE_CAM_RPI)
+    surv.run()
 
 
 
