@@ -1,0 +1,46 @@
+{
+    "cam": {
+        "resolution": {
+            "width": 640,
+            "height": 480
+
+        },
+
+        "frame_rate": 16,
+        "brightness": 50,
+        "contrast": 90
+
+    },
+
+    "opencv": {
+
+        "filter": {
+            "GaussianBlur": {
+                "mask": {
+                    "row": 21,
+                    "column": 21
+                }
+            }
+        },    
+
+        "frames": {
+            "avarage": 5 
+        }
+    },
+
+    "email": {
+
+        "user": {
+            "send_email": true,
+            "destination_email": "richard.chomjak@gmail.com",
+            "timeout": 0.5
+        },
+
+        "server": {
+            "smtp_address": "smtp.gmail.com:587",
+            "username": "",
+            "password": ""
+        }
+        
+    }
+}
